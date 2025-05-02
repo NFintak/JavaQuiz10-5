@@ -1,11 +1,12 @@
 package rocks.zipcode.io.quiz4.collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * @author leon on 11/12/2018.
  */
-public class SimpleStringGroup {
+public class SimpleStringGroup implements Iterable<String> {
 
     private ArrayList<String> iterables;
 
@@ -40,5 +41,10 @@ public class SimpleStringGroup {
 
     public void clear() {
         iterables.clear();
+    }
+
+    @Override
+    public Iterator<String> iterator() {
+        return null;
     }
 }

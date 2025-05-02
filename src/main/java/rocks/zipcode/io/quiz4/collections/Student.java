@@ -17,6 +17,11 @@ public class Student {
         this.amountOfHours = 0.0;
     }
 
+    public Student(Integer id, Double amountOfHours) {
+        this.id = id;
+        this.amountOfHours = amountOfHours;
+    }
+
     public void learn(Double amountOfHours) {
         this.amountOfHours += amountOfHours;
     }

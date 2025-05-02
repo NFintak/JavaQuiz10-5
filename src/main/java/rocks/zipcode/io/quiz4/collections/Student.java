@@ -6,7 +6,7 @@ package rocks.zipcode.io.quiz4.collections;
 public class Student {
 
     private Integer id;
-    private Double amountOfHours;
+    private Double studyTime;
 
     public Student() {
         this(null);
@@ -14,19 +14,19 @@ public class Student {
 
     public Student(Integer id) {
         this.id = id;
-        this.amountOfHours = 0.0;
+        this.studyTime = 0.0;
     }
 
-    public Student(Integer id, Double amountOfHours) {
+    public Student(Integer id, Double studyTime) {
         this.id = id;
-        this.amountOfHours = amountOfHours;
+        this.studyTime = studyTime;
     }
 
     public void learn(Double amountOfHours) {
-        this.amountOfHours += amountOfHours;
+        this.studyTime += amountOfHours;
     }
 
     public Double getTotalStudyTime() {
-        return amountOfHours;
+        return studyTime;
     }
 }

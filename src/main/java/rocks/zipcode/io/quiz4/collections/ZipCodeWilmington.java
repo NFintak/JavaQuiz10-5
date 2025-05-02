@@ -34,6 +34,9 @@ public class ZipCodeWilmington {
     }
 
     public Map<Student, Double> getStudyMap() {
-        return studyMap;
+        for (Map.Entry<Student, Double> entry : this.studyMap.entrySet()) {
+            this.studyMap.put(entry.getKey(), entry.getKey().getTotalStudyTime());
+        }
+        return this.studyMap;
     }
 }
